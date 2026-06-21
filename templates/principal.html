@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,7 +11,7 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="{% static 'css/principal.css'%}">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <!-- MENU -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center " href="#"> <div class="logo"><img src="img/logo/Logo.png" width="200px"></div></a>
+            <a class="navbar-brand d-flex align-items-center " href="#"> <div class="logo"><img src="{% static 'img/logo/Logo.png' %}" width="200px"></div></a>
 
             <button class="navbar-toggler " type="button"
                 data-bs-toggle="collapse"
@@ -38,7 +39,7 @@
 
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="clientes.html">Clientes</a></li>
-                            <li><a class="dropdown-item" href="usuarios.html">Usuário</a></li>
+                            <li><a class="dropdown-item" href="{% url 'usuarios' %}">Usuário</a></li>
                             <li><a class="dropdown-item" href="Produtos.html">Produto</a></li>
                             <li><a class="dropdown-item" href="fabricante.html">Fabricante</a></li>
                         </ul>
@@ -87,7 +88,7 @@
 
                 <div class="d-flex">
                     <button class="btn btn-light btn-sm">
-                       <a href="index.html" class="btn-sair"><i class="bi bi-box-arrow-right"></i> Sair </a>
+                       <a href="{% url 'index' %}" class="btn-sair"><i class="bi bi-box-arrow-right"></i> Sair </a>
                     </button>
                 </div>
 

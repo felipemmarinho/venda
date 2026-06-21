@@ -1,0 +1,269 @@
+{% extends 'base_template.html' %}
+
+<!-- ÁREA DOS CAMPOS -->
+{% block campos %} 
+    <div class="col-md-10">
+
+        <div class="painel-cadastro" id="id_cadastro">
+
+            <h3 class="titulo"><i class="bi bi-people-fill"></i> Cadastro de usuário do sistema</h3>
+
+            <div class="row">
+
+                <!-- Código -->
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">Código</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-key-fill"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>    
+                
+                <!-- Nome -->
+                <div class="col-md-8 mb-3">
+                    <label class="form-label">Nome</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <!-- Sexo -->
+                    <div class="col-md-2 mb-3">
+                        <label class="form-label">Sexo</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-gender-ambiguous"></i>
+                            </span>
+                            <select class="form-control">
+                                <option value="">Selecione</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                                <option value="O">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                <!-- CPF -->
+                <div class="col-md-4 mb-3">
+
+                    <label class="form-label">CPF</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-card-checklist"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Telefone -->
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">Telefone</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-telephone-fill"></i>
+                        </span>
+                        <input type="tel" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Data de Nascimento -->
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">Data de Nascimento</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-calendar-fill"></i>
+                        </span>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>  
+                
+                <!-- CEP -->
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">cep</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi-envelope"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+
+                <!-- Endereço -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Endereço</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Número -->
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">Número</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-hash"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <!-- complemento  -->
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">Complemento</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-house-door-fill"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                
+                <!-- Bairro -->
+                <div class="col-md-5 mb-3">
+                    <label class="form-label">Bairro</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-signpost-fill"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <!-- Cidade -->
+                <div class="col-md-5 mb-3">
+                    <label class="form-label">Cidade</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-building"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <!-- UF -->
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">UF</label>
+                    <select class="form-select">
+                        <option value="">Selecione</option>
+                        <option value="BA">BA</option>
+                        <option value="ES">ES</option>
+                        <option value="MG">MG</option>
+                        <option value="PR">PR</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RS">RS</option>
+                        <option value="SP">SP</option>
+                    </select>
+                </div>                  
+
+                <!-- email -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">E-mail</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope-fill"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label fw-bold">Status</label>
+
+                    <div class="btn-group w-100" role="group">
+                        <input type="radio" class="btn-check" name="status" id="ativo" checked>
+                        <label class="btn btn-outline-success" for="ativo">
+                            <i class="bi bi-check-circle-fill"></i> Ativo
+                        </label>
+
+                        <input type="radio" class="btn-check" name="status" id="inativo">
+                        <label class="btn btn-outline-danger" for="inativo">
+                            <i class="bi bi-x-circle-fill"></i> Inativo
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- class="d-none" -->
+        <!-- formulário de procura -->
+        <div id="id_procura" class="d-none" >
+            <h3 class="titulo"><i class="bi bi-people-fill"></i> Procurar usuário do sistema</h3> 
+            <!-- Procura -->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite um nome de usuário">
+                <button class="btn btn-primary" type="button">
+                    <i class="bi bi-search"></i>
+                </button> 
+                <button class="btn btn-secondary" type="button" id="id_retornar">
+                    <i class="bi bi-arrow-counterclockwise"></i>
+                </button> 
+            </div>
+            
+            <!-- table -->
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome do usuario</th>
+                            <th>Sexo</th>
+                            <th>CPF</th>
+                            <th>Telefone</th>
+                            <th>Data de Nascimento</th>
+                            <th>Outros dados</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Felipe de Mello Marinho</td>
+                            <td>Masculino</td>
+                            <td>985.350.567-34</td>
+                            <td>21-98182-8321</td>
+                            <td>10/10/1967</td>
+                            <td class="text-center"><button class="btn btn-warning btn-sm text-center">...</button></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i> <!-- ícone de editar -->
+                                </button>
+                                <button class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash-fill"></i> <!-- ícone de excluir -->
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Antonia Cerly Alves Vieira</td>
+                            <td>Feminino</td>
+                            <td>259.151.693-68</td>
+                            <td>21-97910-4902</td>
+                            <td>12/04/1966</td>
+                            <td class="text-center"><button class="btn btn-warning btn-sm ">...</button></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i> <!-- ícone de editar -->
+                                </button>
+                                <button class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash-fill"></i> <!-- ícone de excluir -->
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>               
+        </div>     
+
+    </div>
+{% endblock %}
+
+    
